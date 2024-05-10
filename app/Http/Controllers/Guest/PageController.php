@@ -9,7 +9,7 @@ use App\Models\Movie;
 class PageController extends Controller
 {
     public function index(){
-        $title = 'Libreria';
+        $title = 'Movie';
         $movies = Movie::all();
 
         return view('home', compact('movies', 'title'));
