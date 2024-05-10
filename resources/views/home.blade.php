@@ -24,6 +24,7 @@
                     <p class="card-text"><strong>Vote:</strong> {{$movie->vote}}<p>
                     <a href="#" class="card-link"></a>
                     </div>
+                    <a href="{{route('dettaglio',['id' => $movie ->id])}}" class="btn btn-primary">More Info</a>
                 </div>
         </div>
         @endforeach

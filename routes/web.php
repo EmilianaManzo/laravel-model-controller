@@ -20,7 +20,7 @@ Route::get('/film-migliori',[PageController::class, 'bestMovie'])->name('film-mi
 // Pagina base con i film peggiori
 Route::get('/film-peggiori',[PageController::class, 'worstMovie'])->name('film-peggiori');
 // Pagina base con film singolo nel dettaglio
-Route::get('/dettaglio', [PageController::class, 'details'])->name('dettaglio');
+Route::get('/dettaglio/{id}', [PageController::class, 'details'])->name('dettaglio');
 
 
 
