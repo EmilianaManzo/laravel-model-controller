@@ -13,9 +13,14 @@ use App\Http\Controllers\Guest\PageController;
 |
 */
 
-Route::get('/',[PageController::class, 'index'])->name('home');
-
-Route::get('/nuova-pagina', [PageController::class, 'nuovaPagina'])->name('nuova-pagina');
+// Pagina base con tutti i film
+Route::get('/',[PageController::class, 'index'])->name('movies');
+// Pagina base con i film migliori
+Route::get('/film-migliori',[PageController::class, 'bestMovie'])->name('film-migliori');
+// Pagina base con i film peggiori
+Route::get('/film-peggiori',[PageController::class, 'worstMovie'])->name('film-peggiori');
+// Pagina base con film singolo nel dettaglio
+Route::get('/dettaglio', [PageController::class, 'details'])->name('dettaglio');
 
 
 

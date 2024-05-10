@@ -1,6 +1,8 @@
 <header>
     <h1>Header</h1>
 
-    <a href="{{route('home')}}">Home</a>
-    <a href="{{route('nuova-pagina')}}">Nuova Pagina</a>
+    <a href="{{route('movies')}}">Film</a>
+    <a href="{{route('film-migliori')}}">Best Film </a>
+    <a href="{{route('film-peggiori')}}"> WorstFilm</a>
+    {{-- <a href="{{route('')}}">Nuova Pagina</a> --}}
 </header>

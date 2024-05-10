@@ -4,6 +4,11 @@
 
 <div class="container">
     <div class="row">
+        <div class="col">
+            <h1 class="text-bg-danger ">{{$title}}</h1>
+        </div>
+    </div>
+    <div class="row">
 
         @foreach ($movies as $movie )
 
