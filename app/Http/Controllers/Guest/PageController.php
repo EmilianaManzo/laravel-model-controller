@@ -36,6 +36,12 @@ class PageController extends Controller
 
     public function details($id){
         $movie = Movie::find($id);
+
+        // con questa condzione faccio il controllo sull'id per far si che esca l'errore 404 invece di errori di sviluppo
+        if(!isset($movie)){
+            abort(404);
+        }
+
         return view('dettaglio', compact('movie'));
     }
 

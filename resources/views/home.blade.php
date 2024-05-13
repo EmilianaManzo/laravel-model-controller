@@ -1,5 +1,9 @@
 @extends('layout.main')
 
+@section('title')
+    {{Route::currentRouteName()}}
+@endsection
+
 @section('content')
 
 <div class="container">

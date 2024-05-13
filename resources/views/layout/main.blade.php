@@ -8,7 +8,7 @@
     <!-- Styles -->
     @vite('resources/js/app.js')
 
-    <title>Movies</title>
+    <title>Movies | @yield('title')</title>
 </head>
 <body>
     @include('partials.header')
